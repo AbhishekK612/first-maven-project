@@ -9,7 +9,18 @@
 
   <name>first-maven-project</name>
   <url>http://maven.apache.org</url>
-
+<plugins>
+  <plugin>
+			<groupId>org.apache.tomcat.maven</groupId>
+			<artifactId>tomcat10-maven-plugin</artifactId>
+			<version>10.1.55</version>
+	  	<configuration>
+   		<url>http://43.204.115.97:8080/</url>
+   		<server>TomcatServer</server>
+   		<path>/helloworld-webapp</path>
+		  </configuration>
+  </plugin>
+  </plugins>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>21</maven.compiler.source>
